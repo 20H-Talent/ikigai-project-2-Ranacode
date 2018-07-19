@@ -1,0 +1,141 @@
+/******************
+    GENERAL RULES
+******************/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fafafa;
+  font-family: "Source Sans Pro", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/******************
+   TOP NAVBAR
+******************/
+
+nav.Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+
+nav.Navbar .Navbar__Name {
+  font-size: 1.6em;
+}
+
+nav.Navbar .Navbar__Menu {
+  text-transform: uppercase;
+}
+
+.Navbar__Menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Navbar__Menu ul li {
+  padding: 0.2em 0.3em;
+  margin: 0.2em;
+  background-color: white;
+}
+
+/******************
+    HEADER PROFILE
+******************/
+header.Home {
+  padding: 0.5em;
+  margin-top: 2%;
+}
+
+header.Home img {
+  margin: 0 auto;
+  max-width: 210px;
+}
+
+header.Home p {
+  text-align: justify;
+  color: gray;
+  padding: 0.7em;
+  margin: 0.4em;
+  font-size: 1.15em;
+}
+
+/******************
+  PORTFOLIO SECTION
+******************/
+main.Portfolio {
+  background-color: white;
+  margin-top: 10%;
+}
+
+main.Portfolio h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.5em;
+}
+
+main.Portfolio section.Portfolio__Images {
+  padding: 0.98em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+section.Portfolio__Images h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.Porfolio__Images p {
+  text-align: justify;
+}
+/******************
+    MEDIA QUERIES
+    320px -- MOBILE
+    768px -- TABLET
+    1024 -- DESKTOP
+******************/
+
+@media screen and (max-width: 320px) {
+  nav.Navbar .Navbar__Menu {
+    width: 100%;
+  }
+  nav.Navbar,
+  .Navbar__Menu ul {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .Navbar__Menu ul li {
+    text-align: center;
+    flex: 0 0 100%;
+    margin-bottom: 0.3em;
+    padding: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
