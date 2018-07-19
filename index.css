@@ -31,6 +31,7 @@ img {
 ******************/
 
 nav.Navbar {
+  border-top: 1px solid gray;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -87,7 +88,8 @@ main.Portfolio {
   margin-top: 10%;
 }
 
-main.Portfolio h3 {
+main.Portfolio h3,
+footer.Contact h3 {
   text-align: center;
   text-transform: uppercase;
   padding: 1.5em;
@@ -101,14 +103,77 @@ main.Portfolio section.Portfolio__Images {
   align-items: center;
 }
 
-section.Portfolio__Images h4 {
+section.Portfolio__Images .Portfolio__Image--block h4 {
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
 }
 
-section.Porfolio__Images p {
+section.Portfolio__Images .Portfolio__Image--block p {
+  text-align: justify;
+  color: gray;
+  padding: 0.3em;
+}
+
+/*****************
+ FOOTER - CONTACT
+*****************/
+footer.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 0.4em;
+}
+footer.Contact h3,
+footer.Contact p {
+  margin: 0;
+  padding: 1.2em;
   text-align: justify;
 }
+footer.Contact p {
+  color: gray;
+}
+
+footer.Contact .Contact__Block {
+  margin: 0.1em 0;
+  padding: 0.6em;
+  color: gray;
+}
+
+.Contact__Block > span {
+  margin-right: 0.4em;
+}
+
+.Contact__Block::last-child {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/*****************
+ FOOTER - NAVBAR
+*****************/
+nav.Footer__Navbar {
+  margin: 0;
+  padding: 0.7em;
+  max-width: 100%;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+}
+
+nav.Footer__Navbar ul {
+  margin: 0;
+  display: block;
+  padding: 0.3em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
 /******************
     MEDIA QUERIES
     320px -- MOBILE
