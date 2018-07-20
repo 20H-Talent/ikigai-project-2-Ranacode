@@ -14,6 +14,7 @@ Make a responsive layout starting with **"mobile first"** and giving the behavio
 - W3C validated
 
 ### W3C validation
+## The only warning I have It's because I'm using lorem ipsum for simulate text paragraphs
 
 #### The only warning I have it's not relevant because is something related to simulate text paragraphs with Lorem Ipsum.
 
