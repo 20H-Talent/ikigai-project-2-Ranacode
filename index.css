@@ -29,34 +29,37 @@ img {
 /******************
    TOP NAVBAR
 ******************/
-
 nav.Navbar {
   border-top: 1px solid gray;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-content: center;
   height: auto;
 }
 
 nav.Navbar .Navbar__Name {
+  text-align: center;
   font-size: 1.6em;
 }
 
 nav.Navbar .Navbar__Menu {
+  width: 100%;
   text-transform: uppercase;
 }
 
 .Navbar__Menu ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
 }
 
 .Navbar__Menu ul li {
-  padding: 0.2em 0.3em;
-  margin: 0.2em;
   background-color: white;
+  text-align: center;
+  flex: 0 0 100%;
+  margin-bottom: 0.3em;
+  padding: 1em;
 }
 
 /******************
@@ -163,6 +166,7 @@ nav.Footer__Navbar {
   width: 100%;
   background-color: white;
   bottom: 0;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
 }
 
 nav.Footer__Navbar ul {
@@ -181,25 +185,39 @@ nav.Footer__Navbar ul {
     1024 -- DESKTOP
 ******************/
 
-@media screen and (max-width: 320px) {
-  nav.Navbar .Navbar__Menu {
-    width: 100%;
+@media screen and (min-width: 768px) {
+  header.Home {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
-  nav.Navbar,
+
+  header.Home p {
+    align-self: flex-start;
+    max-width: 60%;
+    font-size: 20px;
+  }
+
+  header.Home img {
+    max-width: 40%;
+    height: auto;
+    align-self: center;
+  }
+
+  .Navbar__Menu {
+    padding: 0.7em;
+    text-align: center;
+    margin: 0.5em;
+  }
+
   .Navbar__Menu ul {
-    flex-direction: column;
-    align-content: center;
+    display: inline;
   }
 
   .Navbar__Menu ul li {
-    text-align: center;
-    flex: 0 0 100%;
-    margin-bottom: 0.3em;
-    padding: 1em;
+    display: inline;
+    background-color: #fafafa;
   }
-}
-
-@media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1024px) {
