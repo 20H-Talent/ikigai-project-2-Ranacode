@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal for this project is make a responsive layout starting with **"mobile first"** and giving the behaviour to adapt the design for both, tablet and desktop.
+Make a responsive layout starting with **"mobile first"** and giving the behaviour to adapt the design for both, **_tablet and desktop._**
 
 ### Tools and concepts using in this project:
 
@@ -15,4 +15,10 @@ The goal for this project is make a responsive layout starting with **"mobile fi
 
 ### W3C validation
 
+#### The only warning I have it's not relevant because is something related to simulate text paragraphs with Lorem Ipsum.
+
 ![w3c-validator](images/w3c_validator.png)
+
+### Responsive Layout GIF
+
+![responsive_layout_gif](images/responsive_layout.gif)
