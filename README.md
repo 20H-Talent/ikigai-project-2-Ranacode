@@ -14,5 +14,6 @@ The goal for this project is make a responsive layout starting with **"mobile fi
 - W3C validated
 
 ### W3C validation
+## The only warning I have It's because I'm using lorem ipsum for simulate text paragraphs
 
 ![w3c-validator](images/w3c_validator.png)
