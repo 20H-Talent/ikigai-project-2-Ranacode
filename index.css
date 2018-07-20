@@ -30,7 +30,6 @@ img {
    TOP NAVBAR
 ******************/
 nav.Navbar {
-  border-top: 1px solid gray;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -218,7 +217,61 @@ nav.Footer__Navbar ul {
     display: inline;
     background-color: #fafafa;
   }
+
+  main.Portfolio {
+    margin: 0 auto;
+  }
+  main.Portfolio section.Portfolio__Images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+  }
+
+  section.Portfolio__Images .Portfolio__Image--block {
+    width: 49%;
+    padding: 4px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  nav.Navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+  }
+  .Navbar__Menu {
+    padding: 0.2em;
+    margin: 0;
+    align-items: center;
+  }
+  nav.Navbar .Navbar__Name {
+    flex: 2;
+  }
+
+  nav.Navbar .Navbar__Menu {
+    flex: 2;
+  }
+
+  header.Home p {
+    max-width: 50%;
+    margin-left: 5%;
+  }
+
+  header.Home img {
+    max-width: 60%;
+    height: auto;
+  }
+
+  section.Portfolio__Images .Portfolio__Image--block {
+    width: 32%;
+    padding: 4px;
+  }
+
+  footer.Contact p {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+  }
 }
